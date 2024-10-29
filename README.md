@@ -118,3 +118,6 @@ a31fa24 Добавить главную страницу и стили
 ```git diff --staged``` -- покажет изменения в ```staged```-файлах относительно последних закоммиченных версий;
 ## .gitignore
 ```git status --ignored``` -- показать записи файла .gitignore;
+## Клонируем репозиторий
+```git clone ``` -- копирует проект на локальный компьютер;<br>
+```git clone https://github.com/yandex-praktikum/git-clone-lesson``` -- пример;
