@@ -166,6 +166,7 @@ git push -u origin my-branch # отправили ветку my-branch в уда
 ## Отвязать удаленный репозиторий
 ```git remote rm origin``` — эта команда удалит текущий origin;<bt>
 ## Fast-forward
+### Fast-forward включен
 #### Схематически результат слияния веток при fast-forward выглядит так.
 ![alt text](https://pictures.s3.yandex.net/resources/M4_T2_02_1689342662.png)
 ### Отключить Fast-forward
@@ -173,3 +174,9 @@ git push -u origin my-branch # отправили ветку my-branch в уда
 ```git config [--global] merge.ff false``` — отключить «навсегда» fast-forward;<br>
 #### Схематически результат слияния веток при отключенном fast-forward выглядит так.
 ![alt text](https://pictures.s3.yandex.net/resources/M4_T2_03_1689342784.png)
+## Решение конфликтов
+```git push --force``` — форсированный пуш;<br>
+#### До
+![alt text](https://camo.githubusercontent.com/315abe287ac8f64a1f9a5df4a0fe66b8349d432004ddfc21084f834dec4a2d49/68747470733a2f2f70696374757265732e73332e79616e6465782e6e65742f7265736f75726365732f4d345f54325f30325f313638393334323636322e706e67)
+#### После
+![alt text](https://camo.githubusercontent.com/f2ad1af8a316b70c694b0153560303796ca4dda602301513180a376e633f4b0b/68747470733a2f2f70696374757265732e73332e79616e6465782e6e65742f7265736f75726365732f4d345f54325f30335f313638393334323738342e706e67)
