@@ -84,16 +84,16 @@ untracked -- "git add" --> staged;
 staged    -- "???"     --> tracked/comitted;
 ```
 ## Исправить коммит
-```git commit —amend``` — опция ```—amend``` работает только с последним коммитом (```HEAD```);<br>
+```git commit --amend``` — опция ```—amend``` работает только с последним коммитом (```HEAD```);<br>
 ### Дополнить коммит новыми файлами
-```git commit —amend —no-edit``` — дополнить коммит новыми файлами;<br>
+```git commit --amend --no-edit``` — дополнить коммит новыми файлами;<br>
 ```
 git add common.css
 # добавили файл common.css в список на коммит как обычно
 
 # но вместо команды commit -m '...'
 # будет:
-$ git commit —amend —no-edit
+$ git commit --amend --no-edit
 
 $ git log —oneline
 8340eb2 Добавить главную страницу
