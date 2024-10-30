@@ -180,3 +180,15 @@ git push -u origin my-branch # отправили ветку my-branch в уда
 ![alt text](https://pictures.s3.yandex.net/resources/M4_T2_03201_1689593400.png)
 #### После
 ![alt text](https://pictures.s3.yandex.net/resources/M4_T2_00_1689593419.png)
+## Модели веток
+* Feature branch workflow — простой и самый популярный вариант.<br> 
+Если коротко, в нём для каждого нового изменения создаётся новая ветка,<br>
+которая позже вливается в ```main``` с помощью ```git merge```.
+* Git flow — более сложный вариант. Подход похож на feature branch workflow,<br> 
+но в нём создаётся больше веток, а изменения (коммиты) делят на разные типы:<br> 
+исправление, новая функциональность и так далее. Разные типы коммитов попадают в разные ветки.
+* Trunk-based — подход тоже похож на feature branch workflow.<br> 
+Главное отличие в том, что участники проекта вливают (merge) свой код в основную ветку максимально часто.<br> 
+Например, каждый день.
+### Feature branch workflow
+![alt text](https://pictures.s3.yandex.net/resources/M4_T2_01203_1689598406.png)
