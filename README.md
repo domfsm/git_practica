@@ -165,3 +165,11 @@ git push -u origin my-branch # отправили ветку my-branch в уда
 ```
 ## Отвязать удаленный репозиторий
 ```git remote rm origin``` — эта команда удалит текущий origin;<bt>
+## Fast-forward
+#### Схематически результат слияния веток при fast-forward выглядит так.
+![alt text](https://pictures.s3.yandex.net/resources/M4_T2_02_1689342662.png)
+### Отключить Fast-forward
+```git merge --no-ff add-docs``` — отключить fast-forward;<br>
+```git config [--global] merge.ff false``` — отключить «навсегда» fast-forward;<br>
+#### Схематически результат слияния веток при отключенном fast-forward выглядит так.
+![alt text](https://pictures.s3.yandex.net/resources/M4_T2_03_1689342784.png)
